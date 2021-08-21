@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+         <link rel="stylesheet" href="css/style.css" />
+        <body>
+             <div class="header" >
+                <h1>Welcome <span id="name">Diljeet</span></h1>
+            </div>
+             <main class="app">
+             <div class="content">
+        <h1 style="text-align: center" class="headingEmp">Schedule Week</h1>
+
+        <div class="yearAndMonth">
+          <div>Year: <span class="year"> 2021</span></div>
+          <div>Month: <span class="month"> January</span></div>
+        </div>
+
+         <table class="weekTable">
+
+             {{>main}}
+
+              <tr class="tdSet">
+            <td colspan="7" style="text-align: center;">
+              <button class="setAva">Set Availability</button>
+              {{!-- <button class="editAva">Edit Availability</button> --}}
+            </td>
+            
+          </tr>
+          {{>footmain}}
+          </table>
+          <div class="divButton"><button class="donebtn">Done</button></div>
+        </div>
+          <script src="js/employee.js"></script>
+        </body>
+    </head>
+</html>
